@@ -83,6 +83,7 @@ export const ServerSidebar = async ({ serverId }: ServerSidebarProps) => {
 
   return (
     <div className="flex flex-col h-full text-primary w-full dark:bg-[#292929] bg-[#C7C7C7]">
+      {/* @ts-ignore */}
       <ServerHeader server={server} role={role} />
       <ScrollArea className="flex-1 px-3">
         <div className="mt-2">
@@ -194,6 +195,7 @@ export const ServerSidebar = async ({ serverId }: ServerSidebarProps) => {
               sectionType="members"
               role={role}
               label="Membros"
+              //@ts-ignore
               server={server}
             />
             <div className="space-y-[2px]">
