@@ -103,10 +103,12 @@ export const MembersModal = () => {
             Gerenciar Membros
           </DialogTitle>
           <DialogDescription className="text-center text-zinc-500">
+            {/* @ts-ignore */}
             {server?.members?.length} membros
           </DialogDescription>
         </DialogHeader>
         <ScrollArea className="mt-8 max-h-[420px] pr-6">
+          {/* @ts-ignore */}
           {server?.members?.map((member) => (
             <div key={member.id} className="flex items-center gap-x-2 mb-6">
               <UserAvatar src={member.user.imageUrl} />
