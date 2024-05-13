@@ -1,7 +1,7 @@
 import { currentProfile } from "@/lib/current-profile";
 import { ScrollArea } from "@/components/ui/scroll-area";
 import { Separator } from "@/components/ui/separator";
-import { Hash, Mic, ShieldAlert, ShieldCheck, Video } from "lucide-react";
+import { MessageCircle, Phone, ShieldAlert, ShieldCheck, Video } from "lucide-react";
 import { db } from "@/lib/db";
 import { ChannelType, MemberRole } from "@prisma/client";
 import { redirect } from "next/navigation";
@@ -16,8 +16,8 @@ interface ServerSidebarProps {
 }
 
 const iconMap = {
-  [ChannelType.TEXT]: <Hash className="mr-2 h-4 w-4" />,
-  [ChannelType.AUDIO]: <Mic className="mr-2 h-4 w-4" />,
+  [ChannelType.TEXT]: <MessageCircle className="mr-2 h-4 w-4" />,
+  [ChannelType.AUDIO]: <Phone className="mr-2 h-4 w-4" />,
   [ChannelType.VIDEO]: <Video className="mr-2 h-4 w-4" />,
 };
 
@@ -82,7 +82,7 @@ export const ServerSidebar = async ({ serverId }: ServerSidebarProps) => {
   )?.role;
 
   return (
-    <div className="flex flex-col h-full text-primary w-full dark:bg-[#2B2D31] bg-[#C7C7C7]">
+    <div className="flex flex-col h-full text-primary w-full dark:bg-[#292929] bg-[#C7C7C7]">
       <ServerHeader server={server} role={role} />
       <ScrollArea className="flex-1 px-3">
         <div className="mt-2">
