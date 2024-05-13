@@ -20,7 +20,7 @@ export const ChatWelcome = ({ name, type }: ChatWelcomeProps) => {
       <p className="text-zinc-600 dark:text-zinc-400 text-sm">
         {type === "channel"
           ? `Esse é o começo de #${name}`
-          : `Esse é o começo da sua conversa com ${name}.`}
+          : `Esse é o começo da sua conversa com ${name}`}
       </p>
     </div>
   );
