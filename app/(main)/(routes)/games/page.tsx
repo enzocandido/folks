@@ -1,8 +1,13 @@
+import { GameChatHeader } from "@/components/games/game-header";
+import { GameList } from "@/components/games/game-list";
+
 const GamesPage = () => {
-  return ( 
-    <div className="flex-1 h-full">
+  return (
+    <div>
+      <GameChatHeader />
+      <GameList />
     </div>
-   );
-}
- 
+  );
+};
+
 export default GamesPage;
