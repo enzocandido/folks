@@ -10,7 +10,7 @@ export const NavigationAction = () => {
 
   return (
     <div>
-      <ActionTooltip side="right" align="center" label="Adicione um servidor">
+      <ActionTooltip side="right" align="center" className="hidden md:block" label="Adicione um servidor">
         <button
           className="group flex items-center"
           onClick={() => onOpen("createServer")}
