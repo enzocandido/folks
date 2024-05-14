@@ -12,7 +12,6 @@ model User {
   id          String @id @map("_id")
   name        String
   email       String @unique
-  description String @default("Sem biografia")
   imageUrl    String
   role        String @default("user")
 
