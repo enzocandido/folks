@@ -65,13 +65,13 @@ export const ChatInput = ({ apiUrl, query, name, type }: ChatInputProps) => {
             <FormItem>
               <FormControl>
                 <div className="relative p-4 pb-6">
-                  <div className="absolute top-9 left-8">
-                    <EmojiPicker
-                      onChange={(emoji: string) =>
-                        field.onChange(`${field.value} ${emoji}`)
-                      }
-                    />
-                  </div>
+                  <button
+                    type="button"
+                    onClick={() => onOpen("messageFile", { apiUrl, query })}
+                    className="absolute top-9 left-8 h-[24px] w-[24px] bg-zinc-500 dark:bg-zinc-400 hover:bg-zinc-600 dark:hover:bg-zinc-300 transition rounded-full p-1 flex items-center justify-center"
+                  >
+                    <Plus className="text-white dark:text-[#313338]" />
+                  </button>
                   <Input
                     disabled={isLoading}
                     className="px-14 py-8 bg-zinc-200/90 dark:bg-[#292929] border-none border-0 focus-visible:ring-0 focus-visible:ring-offset-0 text-zinc-600 dark:text-zinc-200"
@@ -86,7 +86,10 @@ export const ChatInput = ({ apiUrl, query, name, type }: ChatInputProps) => {
                         field.onChange(`${field.value} ${emoji}`)
                       }
                     />
-                      <Send onClick={form.handleSubmit(onSubmit)} className="text-zinc-500 dark:text-zinc-400 hover:text-zinc-600 dark:hover:text-zinc-300 transition cursor-pointer" />
+                    <Send
+                      onClick={form.handleSubmit(onSubmit)}
+                      className="text-zinc-500 dark:text-zinc-400 hover:text-zinc-600 dark:hover:text-zinc-300 transition cursor-pointer"
+                    />
                   </div>
                 </div>
               </FormControl>
