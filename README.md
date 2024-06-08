@@ -1,6 +1,6 @@
 # Folks
 
-Inspirado no Discord, Folks é uma plataforma social inovadora projetada para gamers, oferecendo funcionalidades avançadas de comunicação e descoberta de novos jogos. Este projeto foi desenvolvido utilizando o framework Next.js.
+Inspirado no Discord, Folks é uma plataforma social inovadora projetada para gamers, oferecendo funcionalidades avançadas de comunicação. Este projeto foi desenvolvido utilizando o framework Next.js.
 
 ## Recursos Principais
 
