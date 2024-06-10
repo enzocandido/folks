@@ -2,19 +2,15 @@
 "use client";
 
 import { ScrollArea } from "@/components/ui/scroll-area";
-import { Separator } from "@/components/ui/separator";
 
 import {
   DropdownMenu,
   DropdownMenuContent,
   DropdownMenuItem,
-  DropdownMenuSeparator,
   DropdownMenuTrigger,
 } from "@/components/ui/dropdown-menu";
 import { ChevronDown, Settings } from "lucide-react";
 import { useModal } from "@/hooks/use-modal-store";
-import { GameCard } from "./game-card";
-import Image from "next/image";
 
 const games = [
   {
@@ -37,10 +33,6 @@ const games = [
   },
   {
     gameName: "Fall Guys",
-  },
-  {
-    imageUrl:
-      "https://media.rawg.io/media/games/b34/b3419c2706f8f8dbe40d08e23642ad06.jpg",
   },
 ];
 
