@@ -1,9 +1,9 @@
-import { Menu } from "lucide-react";
+import { Menu, Shuffle } from "lucide-react";
 import { Button } from "../ui/button";
 import { Sheet, SheetContent, SheetTrigger } from "../ui/sheet";
 import { NavigationSidebar } from "../navigation/navigation-sidebar";
 import { GameSidebar } from "./game-sidebar";
-import { Separator } from "../ui/separator";
+import { GameShuffle } from "./game-shuffle";
 
 export const GameChatHeader = () => {
   return (
@@ -25,12 +25,9 @@ export const GameChatHeader = () => {
           </Sheet>
         </div>
         <div>
-          <p className="text-md font-semibold px-3 flex items-center h-12">
-            Descoberta inteligente
-          </p>
+          <GameShuffle />
         </div>
       </div>
-      <Separator className="bg-zinc-200 dark:bg-zinc-700 rounded-md my-2" />
     </div>
   );
 };
